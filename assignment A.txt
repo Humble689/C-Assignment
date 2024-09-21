@@ -1,0 +1,36 @@
+1.1-2: Example Requiring the Shortest Distance Between Two Points
+Imagine a company offering delivery services in a busy urban area. A driver is assigned to deliver packages to several locations, and the company wants to minimize travel time to reduce fuel costs. The problem here is finding the shortest route between multiple destinations. The objective is to calculate the most efficient route, minimizing the overall distance and time while avoiding traffic hotspots.
+
+1.1-3: Other Measures of Efficiency in a Real-World Setting
+Besides speed, other measures of efficiency to consider include:
+- Energy consumption: For example, in the delivery scenario, the company might aim to minimize fuel usage to cut costs and reduce environmental impact.
+- Resource utilization: Ensuring that the driver’s time and the vehicle’s capacity are utilized to their fullest.
+- Scalability: How well the solution can handle increasing numbers of deliveries.
+- Reliability: Ensuring that the calculated route avoids areas prone to accidents or delays, improving reliability in service.
+  
+1.1-4: Data Structure Discussion (Graph)
+A graph data structure is ideal for shortest path problems as it allows modeling of routes (edges) between different locations (vertices). 
+
+Strengths:
+- Allows efficient searching of paths using algorithms like Dijkstra’s or A*.
+- Can represent complex networks, such as cities, with weighted edges that account for distance or travel time.
+
+Limitations:
+- Requires significant memory, especially for large networks.
+- May become computationally expensive for dense graphs or those with many vertices, especially in real-time applications.
+
+ 1.1-5: Shortest Path vs. Traveling Salesperson Problem (TSP)
+Similarity:
+- Both involve finding an efficient path through a set of points (nodes) on a graph.
+- Both aim to minimize some cost function, such as distance or time.
+
+Differences:
+- The shortest-path problem is focused on finding the most efficient route between two points, whereas the traveling salesperson problem (TSP) involves visiting all nodes in the graph exactly once and returning to the starting point.
+- TSP is NP-hard, meaning there’s no known efficient algorithm to solve it for large datasets, whereas shortest-path problems (like Dijkstra’s algorithm) are solvable in polynomial time.
+
+1.1-5: Real-World Problems
+- Best solution required: Designing an airplane wing requires the best solution, as even a slight error in material or shape could result in safety risks.
+- Approximate solution is good enough: For online ad placements, it’s often sufficient to approximate the "best" ad positioning since the exact optimal placement might not significantly increase click-through rates.
+
+1.1-6: Real-World Problem with Varying Input Availability
+A real-time stock trading algorithm often has to make decisions based on data that arrives continuously. Sometimes, the algorithm might have access to a full historical dataset to model the market (when all input is available), but other times, it only has partial information and must make real-time decisions based on incoming data, such as new stock prices or news.
